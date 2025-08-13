@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent>h1,h2{
+            color:aqua;
+        }
+        .parent>h1+h2{
+            background-color:blanchedalmond;
+        }
+        .parent>.child>h1{
+            color:darkviolet;
+        }
+        .child+h3{
+            color:greenyellow;
+        }
+        .parent>h1~h4{
+            color:crimson;
+        }
+        .parent>h1+h2+.child>h1{
+            background-color: deeppink;
+        }
+        .parent2>h1{
+            background-color: chartreuse;
+        }
+        .parent2>h1+h2{
+            color:cornflowerblue;
+        }
+        .parent2>h1~.child2>h1{
+            background-color: orange;
+        }
+        h1~.child2>.sub-child>h3{
+            color:fuchsia;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <h1>I am parent</h1>
+        <h2>I am a direct child for parent</h2>
+        <div class="child">
+            <h1>I am indirect child of parent</h1>
+        </div>
+        <h3>Welcome</h3>
+        <h4>Seetharam</h4>
+    </div>
+    <div class="parent2">
+        <h1>child of parent2</h1>
+        <h2>second child</h2>
+        <div class="child2">
+            <h1>indirect child of parent2</h1>
+            <div class="sub-child">
+                <h3>subchild of child2</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
