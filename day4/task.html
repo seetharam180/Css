@@ -12,168 +12,141 @@
             font-family: 'Times New Roman', Times, serif;
         }
         .first,.second{
-            display: flex;
-            margin-left:8%;
-            height:100%;
-            margin-right:8%;
-            box-sizing: border-box;
-            margin-bottom: 20px;
-        }
-        .first>.img>img,.second>.img2>img{
-            height:70%;
             width:100%;
+            margin:10%;
         }
         .img,.img2{
-            box-sizing: border-box;
-            display:inline-block;
-            height:100%;
-            width:100%;
-            padding: 10px;
+            width:20%;
+            display:inline-block; 
+            margin:1%; 
             text-align: center;
         }
-        .box{
-            display: flex;
-            padding-left:45%;
+        .img img,.img2 img{
+            width:100%;
         }
-        .box>p{
+        .box{
+            margin-bottom:40px;
+        }
+
+        .box p{
             padding:10px;
-            margin-top: 50px;   
+            margin:2px;
         }
         .box1{
             margin:10%;
-            margin-top:80px;
         }
-         .box1 img{
-            width:80%;
-         }
-         .box p{
-            /* background-color: black; */
-            /* color:white; */
-            /* border:1px solid white; */
-            padding:2%;
-         }
-        
         .last{
-            display:flex;
-            box-sizing: border-box;
-            margin:10%
+            width:100%;
+            margin:10%;
         }
         .blog{
-            width:100%;
-            box-sizing: border-box;
+            display:inline-block;
+            width:30%;
         }
-        .blog h3{
-            padding-bottom: 20px;
+        .post>img,p{
+            display:inline-block;
         }
         .post>img{
+            width:50px;
             height:50px;
-            width:50px;   
-        }
-        .post{
-            display:flex;
         }
         .para>span{
+            margin:5px;
+            padding:5px;
+            background-color: darkgrey;
             display:inline-block;
-            padding:1%;
-            margin:2%;
-            background-color:darkgrey;
-            color:white;
-            border: 2px solid white;
         }
-    
+        #blog p{
+            margin-top:5%;
+        }
     </style>
 </head>
 <body>
     <div class="first">
         <div class="img">
             <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="sandwich image">
-            <h3>The Perfect Sandwich, A Real NYC Classic</h3>
-            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            <h3>The Perfect Sandwich</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime sint praesentium vero harum corrupti.</p>
         </div>
         <div class="img">
             <img src="https://www.w3schools.com/w3images/steak.jpg" alt="steak image">
-            <h3>Let Me Tell You About This Steak</h3>
-            <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            <h3>About This Steak</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sequi, pariatur atque eum ex aliquam!</p>
         </div>
         <div class="img">
             <img src="https://www.w3schools.com/w3images/cherries.jpg" alt="cherries image">
             <h3>Cherries, interrupted</h3>
-            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-            <p>What else?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus porro asperiores officia est. Ratione, alias!</p>
         </div>
         <div class="img">
             <img src="https://www.w3schools.com/w3images/wine.jpg" alt="wine image">
-            <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
-            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            <h3>Robust Wine and Pasta</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae modi magni voluptatum eligendi reprehenderit?</p>
         </div>
     </div>
     <div class="second">
             <div class="img2">
                 <img src="https://www.w3schools.com/w3images/popsicle.jpg" alt="popsicle">
                 <h3>All I Need Is a Popsicle</h3>
-                <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero voluptatem alias quia optio tempora modi?</p>
             </div>
             <div class="img2">
                 <img src="https://www.w3schools.com/w3images/salmon.jpg" alt="Salmon For Your Skin">
                 <h3>Salmon For Your Skin</h3>
-                <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, magnam eum. Dolores, exercitationem.</p>
             </div>
             <div class="img2">
                 <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="The Perfect Sandwich, A Real Classic">
-                <h3>The Perfect Sandwich, A Real Classic</h3>
-                <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                <h3>The Perfect Sandwich, A Real</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi soluta adipisci optio?</p>
             </div>
             <div class="img2">
                 <img src="https://www.w3schools.com/w3images/croissant.jpg" alt="Le French">
-                <h3>Le French</h3>
-                <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                <h3>Le French receipe </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat iste nulla voluptatem at consectetur.</p>
             </div>       
     </div>
     <div class="box">
+        <center>
         <p>&lt&lt</p>
         <p style="background-color: black; color:white;">1</p>
         <p>2</p>
         <p>3</p>
         <p>4</p>
         <p>&gt&gt</p>
+        </center>
     </div>
     <div class="box1">
         <center>
             <h3>About Me, The Food Man</h3><br>
             <img src="https://www.w3schools.com/w3images/chef.jpg" alt="man image"><br><br>
             <h3>I am Who I Am!</h3><br>
-            <p><i>With Passion For Real, Good Food</i></p><br>
+            <p><i>With Passion For Real, Good Food</i></p><br><br>
             <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
         </center>
     </div>
     <div class="last">
-        <div class="blog">
+        <div class="blog" id="blog">
             <h3>FOOTER</h3>
             <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-            <br>
             <p>Powered by w3.css</p>
         </div>
-        <div class="blog" style="padding-left: 20px;">
+        <div class="blog">
             <h3>BLOG POSTS</h3>
             <div class="post">
                 <img src="https://www.w3schools.com/w3images/workshop.jpg" alt="image">
-                <pre style="padding-left:10px;">
-Lorem
-Sed mattis nunc
-                </pre>
-            </div><br>
+                <p>Lorem Sed mattis nunc</p>
+            </div>
             <hr>
-            <div class="post" style="padding-top:20px;">
+            <div class="post">
                 <img src="https://www.w3schools.com/w3images/gondol.jpg" alt="image2">
-                <pre style="padding-left:10px;">Ipsum
-Praes tinci sed
-                </pre>
+                <p>Ipsum Praes tinci sed</p>
             </div>
         </div>
         <div class="blog">
             <h3>POPULAR TAGS</h3>
             <div class="para">
-                <span style="background-color: black;">Travel</span>
+                <span>Travel</span>
                 <span>Newyork</span>
                 <span>Dinner</span>
                 <span>Salmon</span>
