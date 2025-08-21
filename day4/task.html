@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food blog</title>
+    <!-- <i class="fa-solid fa-burger"></i> -->
+    <script src="https://kit.fontawesome.com/846279ed2a.js" crossorigin="anonymous"></script>
     <style>
         *{
             margin:0;
@@ -11,33 +13,71 @@
             box-sizing: border-box;
             font-family: 'Times New Roman', Times, serif;
         }
+        .head{
+            background-color: azure;
+            padding: 1.5%;
+            position: fixed;
+            top:0;
+            width:100%;
+            
+        }
+        .head a{
+            margin-right: 40%;
+            color: black;
+        }
+        .head>a+p{
+            margin-right: 38%;
+        }
+        .head p{
+            font-size: larger;
+        }
         .first,.second{
             width:100%;
-            margin:10%;
+            margin:8%;
+            box-sizing: border-box;
         }
         .img,.img2{
             width:20%;
             display:inline-block; 
             margin:1%; 
             text-align: center;
+            box-sizing: border-box;
         }
         .img img,.img2 img{
             width:100%;
+            box-sizing: border-box;
+        }
+        .img h3,.img2 h3{
+            margin: 6% 0%;
+            box-sizing: border-box;
         }
         .box{
             margin-bottom:40px;
+            margin:8%;
         }
-
         .box p{
             padding:10px;
             margin:2px;
         }
         .box1{
-            margin:10%;
+            width:90%;
+            margin: 8%;
+            align-items: center;
+            text-align: center;
+            /* box-sizing: border-box; */
+        }
+        .box1 img{
+            width:65%;
+            box-sizing:border-box;
+        }
+        .box1 h3~p{
+            padding-right:10%;
+            box-sizing: border-box;
         }
         .last{
             width:100%;
-            margin:10%;
+            margin:8%;
+            box-sizing: border-box;
         }
         .blog{
             display:inline-block;
@@ -62,6 +102,13 @@
     </style>
 </head>
 <body>
+    <header>
+        <div class="head">
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+            <p>My Food</p>
+            <p>Mail</p>
+        </div>
+    </header>
     <div class="first">
         <div class="img">
             <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="sandwich image">
@@ -117,13 +164,11 @@
         </center>
     </div>
     <div class="box1">
-        <center>
             <h3>About Me, The Food Man</h3><br>
             <img src="https://www.w3schools.com/w3images/chef.jpg" alt="man image"><br><br>
             <h3>I am Who I Am!</h3><br>
-            <p><i>With Passion For Real, Good Food</i></p><br><br>
+            <p><i>With Passion For Real, Good Food</i></p>
             <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-        </center>
     </div>
     <div class="last">
         <div class="blog" id="blog">
