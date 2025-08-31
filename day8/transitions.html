@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .main{
+            background-color: aqua;
+            height: 40px;
+            width:100%;
+            display:flex;
+            position: fixed;
+        }
+        .child{
+            margin-left: 50px;
+            margin-top:10px;
+            width:70px;
+            
+        }
+        .block1{
+            background-color: white;
+            border-top:4px solid black;
+            padding:10px;
+            display:none;
+            margin-top: 20px;
+             
+        }
+        .block1 p{ 
+            padding:10px 2px;
+            
+        }
+        .child:hover .block1{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="child">
+            <h3 class="setha">Courses</h3>
+            <div class="block1">
+                <p>DSA to development</p>
+                <p>Java Full stack</p>
+                <p>Python Full stack</p>
+                <p>For Students</p>
+                <p>Data Science & ML Program</p>
+                <p>All Courses</p>
+            </div>
+        </div>
+        <div class="child">
+            <h3>Turtorials</h3>
+            <div class="block1">
+                <p>HTML5</p>
+                <p>CSS3</p>
+                <p>JavaScript</p>
+                <p>Python</p>
+                <p>Java</p>
+                <p>SQL</p>
+            </div>
+        </div>
+        <div class="child">
+            <h3>Pratice</h3>
+            <div class="block1">
+                <p>DSA to development</p>
+                <p>Java Full stack</p>
+                <p>Python Full stack</p>
+                <p>For Students</p>
+                <p>Data Science & ML Program</p>
+                <p>All Courses</p>
+            </div>
+        </div>
+        <div class="child">
+            <h3>Jobs</h3>
+            <div class="block1">
+                <p>HTML5</p>
+                <p>CSS3</p>
+                <p>JavaScript</p>
+                <p>Python</p>
+                <p>Java</p>
+                <p>SQL</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

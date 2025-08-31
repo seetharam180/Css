@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="icon" type="image" href="https://cdn-icons-png.flaticon.com/512/7039/7039285.png">
+    <script src="https://kit.fontawesome.com/846279ed2a.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        main{
+            width:100%;
+            display:flex;
+        }
+        .section1{
+            background-color:whitesmoke;
+            width:30%;
+            box-sizing: border-box;
+            border:1px solid black;
+            margin:10px;
+        }
+        .section2{
+            width:70%;
+            box-sizing: border-box;
+            border:1px solid black;
+            margin:10px;
+        }
+        section i{
+            color:cadetblue;
+            font-size: 22px;
+        }
+        .details img{
+            width:100%;
+            height:300px;
+        }
+        .details div{
+            display:flex;
+            margin:20px;
+            
+        }
+        .details div p{
+            margin-left:20px;
+            font-size: 17px;
+        }
+        .skills div,.languages div{
+            display:flex;
+            margin:20px;
+        }
+        .skills div h1,.languages div h1{
+            margin-left: 20px;
+        }
+        .skills div i,.languages div i{
+            padding:5px;
+        }
+        .skills p,.languages p{
+            margin-left: 20px;
+            padding:0px;
+            font-size: 17px;
+        }
+        .projects,.education{
+            margin:10px;
+            /* border:1px solid black; */
+            background-color:whitesmoke;
+        }
+        .pro1{
+            display: flex;
+            
+        }
+        .pro1 h1{
+            margin-left: 20px;
+        }
+        .pro1 i{
+            padding:5px;
+        }
+        .pro2{
+            margin:10px;
+        }
+        .pro2 h2{
+            margin:10px 0;
+        }
+        .pro2 ul li{
+            list-style:none;
+            padding:5px;
+            font-size: 18px;
+        }
+        
+        .edu1{
+            display: flex;  
+        }
+        .edu1 h1{
+            margin-left: 20px;
+        }
+        .edu1 i{
+            padding:5px;
+        }
+        .edu2{
+            margin:10px;
+        }
+        .edu2 div{
+            display: flex;
+        }
+        .edu2 h2{
+            margin:10px;
+        }
+        .edu2 div i,.edu2 div p{
+            margin-left:20px;
+            margin-top:20px;
+            margin-bottom:20px;
+            color: cadetblue;
+        }
+        .edu2 div p{
+            font-size: 18px;
+        }
+        .edu2 p{
+            margin-left:20px;
+            font-size: 18px;
+        }
+        .percentage{
+            border:1px solid black;
+            width:80%;
+            height:23px;
+            border-radius: 30px;
+            
+        }
+        .percentage span{
+            width:90%;
+            background-color: cadetblue;
+            border-radius: 30px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        footer{
+            background-color: cadetblue;
+            width:100%;
+            margin-bottom: 0;
+            padding:15px 0px;
+            font-size:17px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <section class="section1">
+        <div class="details">
+            <img src="./profilepic.jpg" alt="profile pic"><br>
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <p>Web Developer</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-house"></i>
+                <p>Home</p>
+            </div>
+            <div>
+                <i class="fa-regular fa-envelope"></i>
+                <p>bobbadiseetharam9963@gmail.com</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                <p>+91 6300891707</p>
+            </div>
+        </div>
+        <div class="skills">
+            <div>
+                <i class="fa-solid fa-user-tie"></i>
+                <h1>Skills</h1>
+            </div>
+            <p>HTML5</p>
+            <div class="percentage"><span>90%</span></div>
+            <p>CSS3</p>
+            <div class="percentage"><span  style="width:80%">80%</span></div>
+            <p>JavaScript</p>
+            <div class="percentage"><span style="width:80%">90%</span></div>
+            <p>Python</p>
+            <div class="percentage"><span style="width:60%">60%</span></div>
+            <p>Java</p>
+            <div class="percentage"><span style="width:50%">50%</span></div>
+            <p>SQL</p>
+            <div class="percentage"><span style="width:60%">60%</span></div>
+        </div>
+        <div class="languages">
+            <div>
+                <i class="fa-solid fa-earth-americas"></i>
+                <h1>Languages</h1>
+            </div>
+            <p>English</p>
+            <div class="percentage"><span style="width:50%"></span></div>
+            <p>Telugu</p>
+            <div class="percentage"><span style="width:90%"></span></div>
+        </div>
+    </section>
+    <section class="section2">
+        <div class="projects">
+            <div class="pro1">
+                <i class="fa-solid fa-sheet-plastic"></i>
+                <h1>Projects</h1>
+            </div>
+            <div class="pro2">
+                <h2>Online Venue Booking System</h2>
+                <ul>
+                    <li>Developed a web-based application enabling users to search, view, and reserve event venues seamlessly.</li>
+                    <li>Implemented user authentication, venue listing, booking management, and an admin panel for venue owners to manage availability and details.</li>
+                    <li>Designed HTML -driven web pages with forms, supported by minimal CSS and JavaScript for styling and interactivity.</li>
+                    <li>Built backend functionality using Java Servlets for processing bookings, managing sessions, and handling user requests.</li>
+                    <li>Integrated MySQL to store and manage venue, booking, and user data with relational schema design.</li>
+                    <li>Streamlined the venue reservation process, reducing manual booking operations by enabling fully online interactions.</li>
+                    <li><h4>Technical Skills:</h4>HTML, CSS, JavaScript, Java Servlets, MySQL.</li>
+                </ul>
+            </div>
+            <div class="pro2">
+                <h2>AI-Based Face Recognition System for Identifying Missing Persons</h2>
+                <ul>
+                    <li>Designed and implemented a facial recognition system to identify missing individuals by comparing live or uploaded images with a database of known faces.</li>
+                    <li>Developed core functionality using Python and OpenCV, achieving accurate face detection and recognition in real-time.</li>
+                    <li>Created a Streamlit-based user interface for seamless interaction, enabling image uploads, live feed analysis, and result visualization.</li>
+                    <li>Integrated APIs for location tracking and automated WhatsApp alerts, enhancing real-time coordination between authorities and families.</li>
+                    <li>Produced system design diagrams and technical documentation to support development, deployment, and maintenance.</li>
+                    <li>Contributed to law enforcement and public safety efforts, streamlining the missing-person search process through AI-powered automation.</li>
+                    <li><h4>Technical Skills:</h4>Python, OpenCV, Streamlit, API Integration, Image Processing, Machine Learning, UI Development, Real-Time Alerts</li>
+                </ul>
+            </div>
+        </div>
+        <div class="education">
+            <div class="edu1">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h1>Education</h1>
+            </div>
+            <div class="edu2">
+                <h2>Bachelor's of Degree</h2>
+                <div>
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <p>Nov 2021 - May 2025</p>
+                </div>
+                <p>Computer Science and Engineering</p>
+            </div>
+            <div class="edu2">
+                <h2>Intermediate Education</h2>
+                <div> 
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <p>Jun 2019 - May 2021</p>
+                </div>
+                
+            </div>
+            <div class="edu2">
+                <h2>Secondary School</h2>
+                <div>
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <p>Jun 2018 - May 2019</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <center>
+        <div>
+            <p>Find me on social media</p>
+        </div>
+        <div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-snapchat"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <div>
+            <p>Powered by Seetharam</p>
+        </div>
+        </center>
+    </footer>
+</body>
+</html>
