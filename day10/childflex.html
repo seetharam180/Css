@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display:flex;
+            height:500px;
+        }
+        .child1{
+            background-color: lightcoral;
+            order:-1;
+            flex-grow: 2;
+            flex-shrink: 0;
+            align-self: center;
+        }
+        .child2{
+            background-color: lightgray;
+            order:-2;
+            flex-grow: 1;
+            align-self: start;
+        }
+        .child3{
+            background-color: lightsalmon;
+            order:0;
+            flex-grow: 1;
+            align-self: end;
+        }
+        .child4{
+            background-color: lightpink;
+            order:1;
+            flex-grow: 1;
+            align-self: baseline;
+        }
+        .child5{
+            background-color: lightskyblue;
+            order:3;
+            flex-grow: 1;
+        }
+        .child6{
+            background-color: lightgreen;
+            order:2;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1">Item-1</div>
+        <div class="child2">Item-2</div>
+        <div class="child3">Item-3</div>
+        <div class="child4">Item-4</div>
+        <div class="child5">Item-5</div>
+        <div class="child6">Item-6</div>
+    </div>
+</body>
+</html>
